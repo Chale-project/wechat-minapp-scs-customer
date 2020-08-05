@@ -1,2 +1,21 @@
-# wechat-minapp-scs-customer
-社区电商C端WeChat小程序，支持多商户入住，平台商户各自独立运营，财务独立D+1结算，共享平台虚拟商品（游戏、娱乐会员充值）交易；实现扫码买单一码微信（小程序）、支付宝（H5）双平台使用，支持线上下单可选商家配送或到店自提核销；支持会员储值、积分签到、会员卡消费升级、优惠券抵扣；商品支持限时秒杀、拼团购等；技术点：运用mpvue基础框架，配合vant UI+vuex状态管理+less预处理+封装全局请求类flyio。打通C端用户通过一个微信小程序APPID领取多商户卡券。
+# qyjk
+
+> 智慧便利店小程序项目介绍
+
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+```
+
+For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

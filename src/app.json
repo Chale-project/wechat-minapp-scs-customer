@@ -1,0 +1,57 @@
+{
+  "pages": [],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#f85437",
+    "navigationBarTitleText": "智慧便利店",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "selectedColor": "#f85437",
+    "color": "#666",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "static/images/icon_home_default.png",
+        "selectedIconPath": "static/images/icon_home_selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/sort/sort",
+        "iconPath": "static/images/icon_healthy_default.png",
+        "selectedIconPath": "static/images/icon_healthy_selected.png",
+        "text": "商品"
+      },
+      {
+        "pagePath": "pages/pay/pay",
+        "iconPath": "static/images/icon_pay_default.png",
+        "selectedIconPath": "static/images/icon_pay_selected.png",
+        "text": "买单"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "iconPath": "static/images/icon_cart_default.png",
+        "selectedIconPath": "static/images/icon_cart_selected.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "static/images/user_icon_default.png",
+        "selectedIconPath": "static/images/user_icon_selected.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于获取附近的便利店！"
+    }
+  },
+  "debug": false
+}

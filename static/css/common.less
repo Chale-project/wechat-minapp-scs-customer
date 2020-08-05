@@ -1,0 +1,239 @@
+page {
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 14px;
+    font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+}
+
+.pages {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.color-dark {
+    color: #f85437;
+}
+
+.color-light {
+    color: #5ac109;
+}
+
+.color-orange {
+    color: #fbb850;
+}
+
+.color-red {
+    color: #e00000;
+}
+
+.color-blue {
+    color: #2d98f3;
+}
+
+image {
+    height: auto;
+    vertical-align: middle;
+}
+
+.icon-default {
+    width: 20px;
+    height: 20px;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+    overflow: hidden;
+    _zoom: 1;
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.ellipsis-2 {
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: normal !important;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+button::after {
+    border: 0;
+}
+
+button.but-default-submit {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 14px;
+    padding-right: 14px;
+    box-sizing: border-box;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 2.8;
+    border-radius: 10em;
+    -webkit-tap-highlight-color: transparent;
+    overflow: hidden;
+    color: #fff;
+    background-color: rgb(248, 84, 55,1);
+}
+button[disabled][type=default].but-default-submit{
+    background-color: rgb(248, 84, 55,.6);
+    color: #fff;
+    opacity: .6;
+}
+button.but-default-submit-active{
+    opacity: .6;
+}
+
+//按钮基本
+.but-default(@bg: #f85437) {
+    color: #fff;
+    border: 1px solid @bg;
+    background-color: @bg;
+}
+
+//按钮激活
+.but-default-active(@bd: 1px solid rgba(43, 170, 3, .6), @bg: rgba(43, 170, 3, .6)) {
+    color: #fff;
+    border: @bd;
+    background-color: @bg;
+}
+
+//文本色
+.textColor(@tc: #666) {
+    color: @tc;
+}
+
+//边框色
+.borderColor(@bd: #eee) {
+    border-color: @bd;
+}
+
+//边框色文本色
+.borderTextColor(@btc: #e00000) {
+    color: @btc;
+    border-color: @btc;
+}
+
+//背景色
+.backgroundColor(@bg: #f1f1f1) {
+    background-color: @bg
+}
+
+//背景线性渐变从左到右
+.backgroundLiearGraientLR(@fc, @tc) {
+    background: -webkit-linear-gradient(left, @fc, @tc);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, @fc, @tc);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, @fc, @tc);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(right, @fc, @tc);
+    /* 标准的语法（必须放在最后） */
+}
+
+//背景线性渐变从上到下
+.backgroundLiearGraientTB(@fc, @tc) {
+    background: -webkit-linear-gradient(top, @fc, @tc);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(bottom, @fc, @tc);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(bottom, @fc, @tc);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(bottom, @fc, @tc);
+    /* 标准的语法（必须放在最后） */
+}
+
+//宽高
+.wh(@w: 100%, @h: 100%) {
+    width: @w;
+    height: @h;
+}
+
+//字号
+.fontSize(@size: 14px) {
+    font-size: @size
+}
+
+// 背景图片地址和大小
+.bis(@url) {
+    background-image: url(@url);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.borderRadius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+
+//背景线条
+.backgroundLine(@left: 0, @right: 0, @height: 1px) {
+    position: absolute;
+    content: '';
+    left: @left;
+    right: @right;
+    bottom: 0;
+    height: @height;
+    transform: scaleY(.5);
+    overflow: hidden;
+    .backgroundColor(#eee);
+}
+
+//定位上下左右居中
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+//定位上下居中
+.ct {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+//定位左右居中
+.cl {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+//字体大小、行高、字体
+.font(@size, @line-height, @family: 'Helvetica') {
+    font: @size/@line-height @family;
+}
+
+//字体大小，颜色
+.sc(@size, @color) {
+    font-size: @size;
+    color: @color;
+}
+
+//flex 布局和 子元素 对其方式
+.fj(@type: space-between) {
+    display: flex;
+    justify-content: @type;
+}
